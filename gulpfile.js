@@ -33,6 +33,4 @@ gulp.task('watch', function() {
   });
 });
 
-gulp.task('default', function () {
-  gulp.run('watch', 'browser-sync');
-});
+gulp.task('default', ['watch', 'browser-sync']);
