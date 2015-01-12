@@ -1,0 +1,36 @@
+.talk {
+  display: block;
+  margin: ($gutter * 2) 0;
+
+  .title {
+    color: $ruby-red;
+    margin: 0;
+  }
+
+  .thumbnail {
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    background: $light-gray;
+    border-radius: 9999px;
+    margin: 0 $gutter;
+    vertical-align: middle;
+  }
+
+  .description {
+    width: 380px;
+    text-align: left;
+    display: inline-block;
+    vertical-align: middle;
+  }
+}
+
+.about {
+  background-image: url(assets/background.png);
+  background-size: 100%;
+  color: #FFFFFF;
+}
+
+.sponsors {
+  background: $light-gray;
+}
