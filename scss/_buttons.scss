@@ -1,0 +1,16 @@
+.button {
+  display: inline-block;
+  font-size: 1.2rem;
+  text-decoration: none;
+  color: $pure-white;
+  background: $dark-gray;
+  padding: 14px 44px 12px;
+  margin-top: $gutter;
+  border-radius: 3px;
+
+  &:hover,
+  &:active {
+    border: none;
+    background: darken($dark-gray, 5%);
+  }
+}

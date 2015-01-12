@@ -1,3 +1,14 @@
+.wrapper {
+  width: 780px;
+  margin: 0 auto;
+  padding: ($gutter * 6) 0;
+  text-align: center;
+
+  footer & {
+    padding: ($gutter / 2);
+  }
+}
+
 .talk {
   display: block;
   margin: ($gutter * 2) 0;
@@ -27,10 +38,19 @@
 
 .about {
   background-image: url(assets/background.png);
-  background-size: 100%;
-  color: #FFFFFF;
+  background-size: cover;
+  color: $pure-white;
 }
 
 .sponsors {
   background: $light-gray;
+}
+
+footer {
+  background: $dark-gray;
+  color: $pure-white;
+
+  li {
+    padding: 0 $gutter;
+  }
 }

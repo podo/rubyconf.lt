@@ -1,6 +1,6 @@
 html {
   font-family: 'Input Sans Narrow', 'Helvetica', Arial, sans-serif;
-  font-size: 62.5%;
+  font-size: 62.5%; /* 1rem = 10px */
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
   -webkit-font-smoothing: antialiased;
@@ -8,7 +8,7 @@ html {
 
 body {
   font-size: 1.4rem;
-  line-height: 1.42857142857;
+  line-height: 1.42857142857; /* 2rem */
 }
 
 h1, h2, h3 {
@@ -28,25 +28,15 @@ h1, h2 {
 
 h1 {
   font-size: 3.2rem;
-  line-height: 1.25;
+  line-height: 1.25; /* 4rem */
 }
 
 h2 {
   font-size: 2.1rem;
-  line-height: 1.4285714286;
+  line-height: 1.4285714286; /* 3rem */
 }
 
 h3 {
   font-size: 1.8rem;
-  line-height: 1.3888888889;
-}
-
-a {
-  color: #FFFFFF;
-  text-decoration: none;
-
-  &:hover {
-    text-decoration: none;
-    border-bottom: 1.5px solid currentColor;
-  }
+  line-height: 1.3888888889; /* 2.5rem */
 }

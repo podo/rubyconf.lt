@@ -2,6 +2,7 @@
 @import 'mixins';
 @import 'typography';
 @import 'layout';
+@import 'buttons';
 
 body {
   margin: 0;
@@ -23,37 +24,12 @@ p {
   margin: $gutter auto;
 }
 
-footer {
-  background: $dark-gray;
+a {
   color: $pure-white;
-
-  li {
-    padding: 0 $gutter;
-  }
-}
-
-.wrapper {
-  width: 780px;
-  margin: 0 auto;
-  padding: ($gutter * 6) 0;
-  text-align: center;
-
-  footer & {
-    padding: ($gutter / 2);
-  }
-}
-
-.button {
-  display: inline-block;
-  font-size: 1.2rem;
   text-decoration: none;
-  color: $pure-white;
-  background: $dark-gray;
-  padding: 14px 44px 12px;
-  margin-top: $gutter;
-  border-radius: 3px;
 
   &:hover {
-    border: none;
+    text-decoration: none;
+    border-bottom: 1.5px solid currentColor;
   }
 }
