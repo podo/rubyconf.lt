@@ -11,10 +11,18 @@
      -moz-animation: fadeIn 1s both 0.75s;
        -o-animation: fadeIn 1s both 0.75s;
           animation: fadeIn 1s both 0.75s;
+  -webkit-transition: background 0.5s;
+     -moz-transition: background 0.5s;
+       -o-transition: background 0.5s;
+          transition: background 0.5s;
 
   &:hover,
   &:active {
     border: none;
     background: darken($dark-gray, 5%);
+    -webkit-transition: background 0.5s;
+       -moz-transition: background 0.5s;
+         -o-transition: background 0.5s;
+            transition: background 0.5s;
   }
 }
