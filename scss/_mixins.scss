@@ -1,0 +1,25 @@
+$tablets: 640px;
+$desktops: 960px;
+
+@mixin respond-to($media) {
+  @if $media == mobiles {
+    @media only screen and (max-width: $tablets) { @content; }
+  }
+  @else if $media == tablets {
+    @media only screen and (min-width: $tablets + 1) and (max-width: $desktops - 1) { @content; }
+  }
+  @else if $media == portables {
+    @media only screen and (max-width: $desktops - 1) { @content; }
+  }
+  @else if $media == wide-screens {
+    @media only screen and (min-width: $desktops) { @content; }
+  }
+}
+
+@mixin clearfix {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}

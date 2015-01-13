@@ -1,8 +1,13 @@
 .wrapper {
-  width: 780px;
+  width: (780px/960px * 100%);
   margin: 0 auto;
   padding: ($gutter * 6) 0;
   text-align: center;
+
+  @include respond-to(mobiles) {
+    width: (280px/320px * 100%);
+    padding: ($gutter * 2) 0;
+  }
 
   footer & {
     padding: ($gutter / 2);
@@ -10,12 +15,49 @@
 }
 
 .talk {
+  @include clearfix;
   display: block;
   margin: ($gutter * 2) 0;
+
+  @include respond-to(portables) {
+    max-width: 420px;
+    margin: ($gutter * 2) auto;
+  }
+
+  .time {
+    font-size: 1.2rem;
+    line-height: 1.25;
+
+    @include respond-to(mobiles) {
+      font-size: 1rem;
+      line-height: 1.5;
+    }
+
+    @include respond-to(portables) {
+      display: inline-block;
+      width: 320px;
+      min-width: 180px;
+      text-align: left;
+    }
+  }
 
   .title {
     color: $ruby-red;
     margin: 0;
+
+    @include respond-to(mobiles) {
+      font-size: 1.6rem;
+      line-height: 1.25;
+    }
+  }
+
+  .name {
+    margin-top: ($gutter/4);
+
+    @include respond-to(mobiles) {
+      font-size: 1.2rem;
+      line-height: 1.3333333333;
+    }
   }
 
   .thumbnail {
@@ -26,13 +68,24 @@
     border-radius: 9999px;
     margin: 0 $gutter;
     vertical-align: middle;
+
+    @include respond-to(portables) {
+      float: left;
+      margin: 0 $gutter 0 0;
+    }
   }
 
   .description {
-    width: 380px;
-    text-align: left;
     display: inline-block;
+    width: 380px;
+    min-width: 180px;
+    text-align: left;
     vertical-align: middle;
+
+    @include respond-to(portables) {
+      float: left;
+      width: 300px;
+    }
   }
 }
 
@@ -44,6 +97,14 @@
 
 .sponsors {
   background: $light-gray;
+
+  li {
+    padding: $gutter;
+
+    @include respond-to(portables) {
+      display: block;
+    }
+  }
 }
 
 footer {
@@ -52,5 +113,11 @@ footer {
 
   li {
     padding: 0 $gutter;
+
+    @include respond-to(mobiles) {
+      font-size: 1.2rem;
+      line-height: 1.25;
+      padding: 0 ($gutter / 2);
+    }
   }
 }

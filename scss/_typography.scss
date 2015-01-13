@@ -29,11 +29,21 @@ h1, h2 {
 h1 {
   font-size: 3.2rem;
   line-height: 1.25; /* 4rem */
+
+  @include respond-to(mobiles) {
+    font-size: 2.4rem;
+    line-height: 1.25; /* 3rem */
+  }
 }
 
 h2 {
   font-size: 2.1rem;
   line-height: 1.4285714286; /* 3rem */
+
+  @include respond-to(mobiles) {
+    font-size: 1.8rem;
+    line-height: 1.1111111111; /* 2rem */
+  }
 }
 
 h3 {

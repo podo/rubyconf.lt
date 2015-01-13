@@ -17,11 +17,19 @@ li {
   display: inline-block;
   list-style-type: none;
   padding: 0 $gutter;
+
+  @include respond-to(mobiles) {
+    padding: 0;
+  }
 }
 
 p {
-  width: 460px;
+  max-width: 460px;
   margin: $gutter auto;
+
+  @include respond-to(mobiles) {
+    padding: 0 $gutter;
+  }
 }
 
 a {
