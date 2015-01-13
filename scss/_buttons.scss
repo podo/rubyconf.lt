@@ -7,6 +7,10 @@
   padding: 14px 44px 12px;
   margin-top: $gutter;
   border-radius: 3px;
+  -webkit-animation: fadeIn 1s both 0.75s;
+     -moz-animation: fadeIn 1s both 0.75s;
+       -o-animation: fadeIn 1s both 0.75s;
+          animation: fadeIn 1s both 0.75s;
 
   &:hover,
   &:active {

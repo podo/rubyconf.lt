@@ -11,6 +11,13 @@ body {
   line-height: 1.42857142857; /* 2rem */
 }
 
+h1, h2, h3, p {
+  -webkit-animation: fadeIn 1s both 0.75s;
+     -moz-animation: fadeIn 1s both 0.75s;
+       -o-animation: fadeIn 1s both 0.75s;
+          animation: fadeIn 1s both 0.75s;
+}
+
 h1, h2, h3 {
   font-weight: 400;
 }

@@ -1,5 +1,6 @@
 @import 'variables';
 @import 'mixins';
+@import 'animations';
 @import 'typography';
 @import 'layout';
 @import 'buttons';
@@ -7,6 +8,10 @@
 body {
   margin: 0;
   padding: 0;
+  -webkit-animation: fadeIn 1s both 0.5s;
+     -moz-animation: fadeIn 1s both 0.5s;
+       -o-animation: fadeIn 1s both 0.5s;
+          animation: fadeIn 1s both 0.5s;
 }
 
 ul {
@@ -40,4 +45,11 @@ a {
     text-decoration: none;
     border-bottom: 1.5px solid currentColor;
   }
+}
+
+img {
+    -webkit-animation: fadeIn 1s both 1s;
+       -moz-animation: fadeIn 1s both 1s;
+         -o-animation: fadeIn 1s both 1s;
+            animation: fadeIn 1s both 1s;
 }
