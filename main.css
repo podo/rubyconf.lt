@@ -123,7 +123,8 @@ h3 {
         text-align: left; } }
     @media only screen and (max-width: 640px) {
       .talk .time {
-        width: 280px;
+        display: inline-block;
+        width: calc(100% - 100px);
         font-size: 1rem;
         line-height: 1.5; } }
   .talk .title {
@@ -163,7 +164,8 @@ h3 {
         width: 320px; } }
     @media only screen and (max-width: 640px) {
       .talk .description {
-        width: 280px; } }
+        display: inline-block;
+        width: calc(100% - 100px); } }
 
 @media only screen and (max-width: 640px) {
   .schedule ul {
@@ -206,6 +208,8 @@ h3 {
     @media only screen and (max-width: 959px) {
       .sponsors li {
         display: block; } }
+  .sponsors a {
+    color: transparent; }
 
 footer {
   background: #444444; }
