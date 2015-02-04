@@ -94,6 +94,14 @@
   }
 }
 
+.schedule {
+  ul {
+    @include respond-to(mobiles) {
+      margin-top: ($gutter * 3);
+    }
+  }
+}
+
 .about {
   position: relative;
   background-color: $dark-gray;
@@ -151,7 +159,7 @@
 }
 
 footer {
-  background: $ruby-red;
+  background: $dark-gray;
 
   li {
     padding: 0 $gutter;
