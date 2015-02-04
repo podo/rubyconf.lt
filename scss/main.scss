@@ -20,6 +20,10 @@ body {
 
 ul {
   padding: 0;
+
+  @include respond-to(mobiles) {
+    margin-top: ($gutter * 3);
+  }
 }
 
 li {

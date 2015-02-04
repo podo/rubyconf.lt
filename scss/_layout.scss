@@ -28,16 +28,17 @@
     font-size: 1.2rem;
     line-height: 1.25;
 
-    @include respond-to(mobiles) {
-      font-size: 1rem;
-      line-height: 1.5;
-    }
-
     @include respond-to(portables) {
       display: inline-block;
       width: 320px;
       min-width: 180px;
       text-align: left;
+    }
+
+    @include respond-to(mobiles) {
+      width: 280px;
+      font-size: 1rem;
+      line-height: 1.5;
     }
   }
 
@@ -84,7 +85,11 @@
 
     @include respond-to(portables) {
       float: left;
-      width: 300px;
+      width: 320px;
+    }
+
+    @include respond-to(mobiles) {
+      width: 280px;
     }
   }
 }
