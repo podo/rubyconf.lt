@@ -3,6 +3,7 @@
     <defs></defs>
     <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
         <g id="logo">
+            <path d="M48,86.8 L95.1,39.7 L95.1,24 L71.5,0.5 L24.4,0.5 L1,24 L1,39.7 L48,86.8 L48,86.8 Z" id="Shape" fill="#EC1C24"></path>
             <g id="Group">
                 <rect id="Rectangle-path" fill="#F27274" transform="translate(63.751160, 31.813110) rotate(-45.000000) translate(-63.751160, -31.813110) " x="58.2012132" y="26.2631632" width="11.0998936" height="11.0998936"></rect>
                 <g>
