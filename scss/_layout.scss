@@ -90,10 +90,47 @@
 }
 
 .about {
-  background-color: $ruby-red;
+  position: relative;
+  background-color: $dark-gray;
   background-image: url(assets/background.jpg);
   background-size: cover;
   color: $pure-white;
+
+  @include respond-to(wide-screens) {
+    min-height: 640px;
+    height: 90vh;
+  }
+
+  .wrapper {
+    @include respond-to(wide-screens) {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      padding: 0;
+      -webkit-transform: translate(-50%, -50%);
+          -ms-transform: translate(-50%, -50%);
+              transform: translate(-50%, -50%);
+    }
+  }
+
+  .logo {
+    margin: 0 0 ($gutter * 3);
+
+    @include respond-to(mobiles) {
+      margin-bottom: ($gutter * 1.5);
+    }
+
+    &:after,
+    &:before {
+      display: none;
+    }
+
+    img {
+      @include respond-to(mobiles) {
+        width: 64px;
+      }
+    }
+  }
 }
 
 .sponsors {
@@ -109,8 +146,7 @@
 }
 
 footer {
-  background: $dark-gray;
-  color: $pure-white;
+  background: $ruby-red;
 
   li {
     padding: 0 $gutter;
